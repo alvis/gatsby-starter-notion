@@ -1,0 +1,19 @@
+{
+  "preset": ["@alvis/preset-gatsby"],
+  "config": {
+    "eslint": {
+      "overrides": [
+        {
+          "files": ["src/**/*.tsx"],
+          "rules": {
+            "max-lines-per-function": ["error", { "max": 90 }]
+          }
+        }
+      ]
+    },
+    "gitignore": ["/.env.*", "!/.env.sample", "/types/gatsby-graphql.d.ts"],
+    "tsconfig": {
+      "compilerOptions": { "module": "ESNext", "target": "ESNext" }
+    }
+  }
+}
